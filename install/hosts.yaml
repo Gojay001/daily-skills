@@ -1,0 +1,20 @@
+# Agent install paths — used by install.sh
+# global: user-wide skills directory
+# project: relative to repo root when --scope project
+
+hosts:
+  cursor:
+    global: ~/.cursor/skills
+    project: .cursor/skills
+
+  claude:
+    global: ~/.claude/skills
+    project: .claude/skills
+
+  codex:
+    global: ~/.codex/skills
+    project: .agents/skills
+
+  opencode:
+    global: ~/.config/opencode/skills
+    project: .opencode/skills

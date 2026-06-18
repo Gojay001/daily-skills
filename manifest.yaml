@@ -1,0 +1,12 @@
+# daily-skills registry — install.sh reads this file.
+# Reserved fields for future host adapters: agents, default_scope, hosts
+version: 1
+prefix: daily
+
+skills:
+  - id: hello-skill
+    path: skills/hello-skill
+    description: Verify daily-skills install and symlink wiring in Cursor or other agents.
+    tags: [meta, example]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global

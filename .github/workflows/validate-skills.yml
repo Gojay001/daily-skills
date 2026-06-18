@@ -1,0 +1,25 @@
+name: validate-skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run doctor
+        run: ./install/install.sh doctor
+
+      - name: Check SKILL.md frontmatter
+        run: |
+          set -e
+          for f in skills/*/SKILL.md; do
+            [ -f "$f" ] || continue
+            grep -q '^name:' "$f" || { echo "missing name in $f"; exit 1; }
+            grep -q '^description:' "$f" || { echo "missing description in $f"; exit 1; }
+            echo "OK $f"
+          done
