@@ -1,12 +1,54 @@
 # daily-skills registry — install.sh reads this file.
-# Reserved fields for future host adapters: agents, default_scope, hosts
 version: 1
 prefix: daily
 
 skills:
-  - id: hello-skill
-    path: skills/hello-skill
-    description: Verify daily-skills install and symlink wiring in Cursor or other agents.
-    tags: [meta, example]
+  - id: brainstorming
+    path: skills/brainstorming
+    name: brainstorming
+    summary: 任何创造性/功能开发前先做需求澄清与设计，未经用户批准禁止写代码。
+    source:
+      repo: https://github.com/obra/superpowers
+      path: skills/brainstorming
+      license: MIT
+    tags: [planning, design, superpowers]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: create-skill
+    path: skills/create-skill
+    name: create-skill
+    summary: 编写或优化 Cursor Agent Skill（SKILL.md 结构、frontmatter、触发场景）。
+    source:
+      repo: cursor://skills-cursor/create-skill
+      path: create-skill/SKILL.md
+      license: Cursor built-in (personal redistribution)
+    tags: [meta, authoring, cursor]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: caveman
+    path: skills/caveman
+    name: caveman
+    summary: 极简压缩沟通模式，减少 token 同时保持技术准确性（lite/full/ultra/文言文）。
+    source:
+      repo: https://github.com/JuliusBrussee/caveman
+      path: skills/caveman
+      license: MIT
+    tags: [communication, efficiency]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: office-hours
+    path: skills/office-hours
+    name: office-hours
+    summary: YC Office Hours 式产品诊断——六个 forcing questions，输出设计文档而非代码。
+    source:
+      repo: https://github.com/garrytan/gstack
+      path: office-hours/
+      license: MIT
+    requires:
+      - gstack
+    tags: [planning, product, gstack]
     agents: [cursor, claude, codex, opencode]
     default_scope: global
