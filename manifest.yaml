@@ -39,6 +39,18 @@ skills:
     agents: [cursor, claude, codex, opencode]
     default_scope: global
 
+  - id: frontend-design
+    path: skills/frontend-design
+    name: frontend-design
+    summary: 构建或重塑 UI 时的视觉设计指导——审美方向、 typography、避免模板化默认风格。
+    source:
+      repo: https://github.com/anthropics/skills
+      path: skills/frontend-design
+      license: Apache-2.0
+    tags: [design, frontend, ui]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
   - id: office-hours
     path: skills/office-hours
     name: office-hours
