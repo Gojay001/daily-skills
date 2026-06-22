@@ -76,3 +76,15 @@ skills:
     tags: [planning, product, gstack]
     agents: [cursor, claude, codex, opencode]
     default_scope: global
+
+  - id: writing-plans
+    path: skills/writing-plans
+    name: writing-plans
+    summary: 在有 spec/需求后、写代码前，产出 bite-sized 实现计划（TDD、逐步 commit）。
+    source:
+      repo: https://github.com/obra/superpowers
+      path: skills/writing-plans
+      license: MIT
+    tags: [planning, implementation, superpowers]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
