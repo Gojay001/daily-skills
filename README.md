@@ -12,6 +12,7 @@
 | [create-skill](skills/create-skill/) | 创建/优化 Agent Skill（`SKILL.md` 结构、frontmatter、触发词） | Cursor 内置 `skills-cursor/create-skill` | Cursor 内置 | — |
 | [caveman](skills/caveman/) | 极简沟通模式，压缩 token（lite / full / ultra / 文言文） | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | MIT | — |
 | [frontend-design](skills/frontend-design/) | 构建/重塑 UI 的视觉设计指导，强调辨识度，避免模板化审美 | [anthropics/skills](https://github.com/anthropics/skills) `skills/frontend-design` | Apache-2.0 | — |
+| [headroom](skills/headroom/) | 压缩 tool output / 日志 / 文件上下文，节省 60–95% token；Cursor 集成与 MCP | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)（curated skill） | Apache-2.0 | **headroom-ai** CLI |
 | [office-hours](skills/office-hours/) | YC Office Hours 产品诊断：六个 forcing questions，输出设计文档 | [garrytan/gstack](https://github.com/garrytan/gstack) `office-hours` | MIT | **gstack** |
 
 每个 skill 目录下的 `SOURCE.md` 记录上游路径、同步日期和注意事项。
@@ -24,6 +25,7 @@
 | create-skill | 「帮我写一个 skill」「SKILL.md 怎么写」 |
 | caveman | 「caveman mode」「少说点 token」 |
 | frontend-design | 「帮我设计这个页面」「不要 AI slop 审美」 |
+| headroom | 「用 headroom 压缩上下文」「token 太多了」 |
 | office-hours | 「office hours」「帮我想想这个产品值不值得做」 |
 
 ## 项目级 Skills（外部引用）

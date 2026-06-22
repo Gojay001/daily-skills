@@ -51,6 +51,18 @@ skills:
     agents: [cursor, claude, codex, opencode]
     default_scope: global
 
+  - id: headroom
+    path: skills/headroom
+    name: headroom
+    summary: Headroom 上下文压缩——安装、Cursor 集成（wrap/proxy/MCP），减少 tool output 与日志 token 占用。
+    source:
+      repo: https://github.com/headroomlabs-ai/headroom
+      path: _(curated — no upstream SKILL.md)_
+      license: Apache-2.0
+    tags: [efficiency, context, compression]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
   - id: office-hours
     path: skills/office-hours
     name: office-hours
