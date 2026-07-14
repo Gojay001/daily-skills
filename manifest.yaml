@@ -405,3 +405,963 @@ skills:
     tags: [addyosmani, engineering]
     agents: [cursor, claude, codex, opencode]
     default_scope: global
+
+  - id: ablation-planner
+    path: skills/ablation-planner
+    name: ablation-planner
+    summary: Use when main results pass result-to-claim (claim_supported=yes or partial) and ablatio...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/ablation-planner
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: alphaxiv
+    path: skills/alphaxiv
+    name: alphaxiv
+    summary: Quick single-paper lookup via AlphaXiv LLM-optimized summaries with tiered source fallback
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/alphaxiv
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: analyze-results
+    path: skills/analyze-results
+    name: analyze-results
+    summary: Analyze ML experiment results, compute statistics, generate comparison tables and insights
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/analyze-results
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: arxiv
+    path: skills/arxiv
+    name: arxiv
+    summary: Search, download, and summarize academic papers from arXiv
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/arxiv
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: auto-paper-improvement-loop
+    path: skills/auto-paper-improvement-loop
+    name: auto-paper-improvement-loop
+    summary: Autonomously improve a generated paper via GPT-5
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/auto-paper-improvement-loop
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: auto-review-loop
+    path: skills/auto-review-loop
+    name: auto-review-loop
+    summary: Autonomous multi-round research review loop
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/auto-review-loop
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: auto-review-loop-llm
+    path: skills/auto-review-loop-llm
+    name: auto-review-loop-llm
+    summary: Autonomous research review loop using any OpenAI-compatible LLM API
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/auto-review-loop-llm
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: auto-review-loop-minimax
+    path: skills/auto-review-loop-minimax
+    name: auto-review-loop-minimax
+    summary: Autonomous multi-round research review loop using MiniMax API
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/auto-review-loop-minimax
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: citation-audit
+    path: skills/citation-audit
+    name: citation-audit
+    summary: Zero-context verification that every bibliographic entry in the paper is real, correctl...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/citation-audit
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: claims-drafting
+    path: skills/claims-drafting
+    name: claims-drafting
+    summary: Draft patent claims for an invention
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/claims-drafting
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: comm-lit-review
+    path: skills/comm-lit-review
+    name: comm-lit-review
+    summary: Communications-domain literature review with Claude-style knowledge-base-first retrieval
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/comm-lit-review
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: deepxiv
+    path: skills/deepxiv
+    name: deepxiv
+    summary: Search and progressively read open-access academic papers through DeepXiv
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/deepxiv
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: dse-loop
+    path: skills/dse-loop
+    name: dse-loop
+    summary: Autonomous design space exploration loop for computer architecture and EDA
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/dse-loop
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: embodiment-description
+    path: skills/embodiment-description
+    name: embodiment-description
+    summary: Write detailed embodiment descriptions for patent specifications
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/embodiment-description
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: exa-search
+    path: skills/exa-search
+    name: exa-search
+    summary: AI-powered web search via Exa with content extraction
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/exa-search
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: experiment-audit
+    path: skills/experiment-audit
+    name: experiment-audit
+    summary: Audit experiment integrity before claiming results
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/experiment-audit
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: experiment-bridge
+    path: skills/experiment-bridge
+    name: experiment-bridge
+    summary: Workflow 1
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/experiment-bridge
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: experiment-plan
+    path: skills/experiment-plan
+    name: experiment-plan
+    summary: Turn a refined research proposal or method idea into a detailed, claim-driven experimen...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/experiment-plan
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: experiment-queue
+    path: skills/experiment-queue
+    name: experiment-queue
+    summary: SSH job queue for multi-seed/multi-config ML experiments with OOM-aware retry, stale-sc...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/experiment-queue
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: feishu-notify
+    path: skills/feishu-notify
+    name: feishu-notify
+    summary: Send notifications to Feishu/Lark
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/feishu-notify
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: figure-description
+    path: skills/figure-description
+    name: figure-description
+    summary: Process user-provided patent figures and generate formal drawing descriptions
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/figure-description
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: figure-spec
+    path: skills/figure-spec
+    name: figure-spec
+    summary: Generate deterministic publication-quality architecture, workflow, and pipeline diagram...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/figure-spec
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: formula-derivation
+    path: skills/formula-derivation
+    name: formula-derivation
+    summary: Structures and derives research formulas when the user wants to 推导公式, build a theory li...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/formula-derivation
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: gemini-search
+    path: skills/gemini-search
+    name: gemini-search
+    summary: Search research papers via Gemini for broad literature discovery
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/gemini-search
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: grant-proposal
+    path: skills/grant-proposal
+    name: grant-proposal
+    summary: Draft a structured grant proposal from research ideas and literature
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/grant-proposal
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: idea-creator
+    path: skills/idea-creator
+    name: idea-creator
+    summary: Generate and rank research ideas given a broad direction
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/idea-creator
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: idea-discovery
+    path: skills/idea-discovery
+    name: idea-discovery
+    summary: "Workflow 1: Full idea discovery pipeline to go from a broad research direction to valid..."
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/idea-discovery
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: idea-discovery-robot
+    path: skills/idea-discovery-robot
+    name: idea-discovery-robot
+    summary: Workflow 1 adaptation for robotics and embodied AI
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/idea-discovery-robot
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: integrity-forensics
+    path: skills/integrity-forensics
+    name: integrity-forensics
+    summary: Run the Anti-Autoresearch integrity-forensics sweep (span-anchored evidence ledger → GP...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/integrity-forensics
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: interview-cheatsheet
+    path: skills/interview-cheatsheet
+    name: interview-cheatsheet
+    summary: Generate a long-form Chinese interview-prep cheat sheet on a specific ML/LLM topic — fo...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/interview-cheatsheet
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: invention-structuring
+    path: skills/invention-structuring
+    name: invention-structuring
+    summary: Structure a raw invention idea into a formal invention disclosure
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/invention-structuring
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: jurisdiction-format
+    path: skills/jurisdiction-format
+    name: jurisdiction-format
+    summary: Compile patent application into jurisdiction-specific filing format
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/jurisdiction-format
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: kill-argument
+    path: skills/kill-argument
+    name: kill-argument
+    summary: "Two-thread adversarial review: a fresh reviewer constructs the strongest 200-word rejec..."
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/kill-argument
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: mermaid-diagram
+    path: skills/mermaid-diagram
+    name: mermaid-diagram
+    summary: Generate Mermaid diagrams from user requirements
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/mermaid-diagram
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: meta-apply
+    path: skills/meta-apply
+    name: meta-apply
+    summary: Privileged applier that LANDS meta-optimize / corpus-audit patches the user approved — ...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/meta-apply
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: meta-optimize
+    path: skills/meta-optimize
+    name: meta-optimize
+    summary: Analyze ARIS usage logs and propose optimizations to SKILL
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/meta-optimize
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: monitor-experiment
+    path: skills/monitor-experiment
+    name: monitor-experiment
+    summary: Monitor running experiments, check progress, collect results
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/monitor-experiment
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: novelty-check
+    path: skills/novelty-check
+    name: novelty-check
+    summary: Verify research idea novelty against recent literature
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/novelty-check
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: openalex
+    path: skills/openalex
+    name: openalex
+    summary: Search academic papers via OpenAlex API for open citation data, institutional affiliati...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/openalex
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: overleaf-sync
+    path: skills/overleaf-sync
+    name: overleaf-sync
+    summary: Two-way sync between a local paper directory and an Overleaf project, so ARIS audit/edi...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/overleaf-sync
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-claim-audit
+    path: skills/paper-claim-audit
+    name: paper-claim-audit
+    summary: Zero-context verification that every number, comparison, and scope claim in the paper m...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-claim-audit
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-compile
+    path: skills/paper-compile
+    name: paper-compile
+    summary: Compile LaTeX paper to PDF, fix errors, and verify output
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-compile
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-figure
+    path: skills/paper-figure
+    name: paper-figure
+    summary: Generate publication-quality figures and tables from experiment results
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-figure
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-illustration
+    path: skills/paper-illustration
+    name: paper-illustration
+    summary: Generate publication-quality AI illustrations for academic papers using Gemini image ge...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-illustration
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-illustration-image2
+    path: skills/paper-illustration-image2
+    name: paper-illustration-image2
+    summary: Generate publication-quality academic illustrations through a local Codex app-server br...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-illustration-image2
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-plan
+    path: skills/paper-plan
+    name: paper-plan
+    summary: Generate a structured paper outline from review conclusions and experiment results
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-plan
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-poster
+    path: skills/paper-poster
+    name: paper-poster
+    summary: DEPRECATED — superseded by /paper-poster-html
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-poster
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-poster-html
+    path: skills/paper-poster-html
+    name: paper-poster-html
+    summary: DEFAULT poster pipeline — build an academic conference poster (ICML/NeurIPS/ICLR/CVPR/
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-poster-html
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-slides
+    path: skills/paper-slides
+    name: paper-slides
+    summary: Generate conference presentation slides (beamer LaTeX → PDF + editable PPTX) from a com...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-slides
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-talk
+    path: skills/paper-talk
+    name: paper-talk
+    summary: "End-to-end conference talk pipeline: paper → slide outline → Beamer + PPTX → per-page p..."
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-talk
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-write
+    path: skills/paper-write
+    name: paper-write
+    summary: Draft LaTeX paper section by section from an outline
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-write
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: paper-writing
+    path: skills/paper-writing
+    name: paper-writing
+    summary: "Workflow 3: Full paper writing pipeline that goes from a narrative report to a polished..."
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/paper-writing
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: patent-novelty-check
+    path: skills/patent-novelty-check
+    name: patent-novelty-check
+    summary: Assess patent novelty and non-obviousness against prior art
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/patent-novelty-check
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: patent-pipeline
+    path: skills/patent-pipeline
+    name: patent-pipeline
+    summary: Full patent drafting pipeline from invention description to jurisdiction-formatted fili...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/patent-pipeline
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: patent-review
+    path: skills/patent-review
+    name: patent-review
+    summary: Get an external patent examiner review of a patent application
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/patent-review
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: pixel-art
+    path: skills/pixel-art
+    name: pixel-art
+    summary: Generate pixel art SVG illustrations for READMEs, docs, or slides
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/pixel-art
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: prior-art-search
+    path: skills/prior-art-search
+    name: prior-art-search
+    summary: Search patent databases and academic literature for prior art relevant to an invention
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/prior-art-search
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: proof-checker
+    path: skills/proof-checker
+    name: proof-checker
+    summary: Rigorous mathematical proof verification and fixing workflow
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/proof-checker
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: proof-writer
+    path: skills/proof-writer
+    name: proof-writer
+    summary: Writes rigorous mathematical proofs for ML/AI theory
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/proof-writer
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: qzcli
+    path: skills/qzcli
+    name: qzcli
+    summary: Manage GPU compute jobs on the Qizhi (启智) platform using qzcli — a kubectl-style CLI tool
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/qzcli
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: rebuttal
+    path: skills/rebuttal
+    name: rebuttal
+    summary: "Workflow 4: Submission rebuttal pipeline"
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/rebuttal
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: render-html
+    path: skills/render-html
+    name: render-html
+    summary: Render an ARIS Markdown / JSON artifact (IDEA_REPORT, AUTO_REVIEW, KILL_ARGUMENT, PAPER...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/render-html
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: research-lit
+    path: skills/research-lit
+    name: research-lit
+    summary: Search and analyze research papers, find related work, summarize key ideas
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/research-lit
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: research-pipeline
+    path: skills/research-pipeline
+    name: research-pipeline
+    summary: "Full end-to-end research pipeline: from a broad research direction through idea discove..."
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/research-pipeline
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: research-refine
+    path: skills/research-refine
+    name: research-refine
+    summary: Turn a vague research direction into a problem-anchored, elegant, frontier-aware, imple...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/research-refine
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: research-refine-pipeline
+    path: skills/research-refine-pipeline
+    name: research-refine-pipeline
+    summary: "Run an end-to-end workflow that chains `research-refine` and `experiment-plan`"
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/research-refine-pipeline
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: research-review
+    path: skills/research-review
+    name: research-review
+    summary: Get a deep critical review of research from an external reviewer backend (Codex or manual)
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/research-review
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: research-wiki
+    path: skills/research-wiki
+    name: research-wiki
+    summary: Persistent research knowledge base that accumulates papers, ideas, experiments, claims,...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/research-wiki
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: resubmit-pipeline
+    path: skills/resubmit-pipeline
+    name: resubmit-pipeline
+    summary: "Workflow 5: orchestrate a text-only resubmit of a polished paper to a different venue u..."
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/resubmit-pipeline
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: result-to-claim
+    path: skills/result-to-claim
+    name: result-to-claim
+    summary: "Use when experiments complete to judge what claims the results support, what they don't..."
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/result-to-claim
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: run-experiment
+    path: skills/run-experiment
+    name: run-experiment
+    summary: Deploy and run ML experiments on local, remote, Vast
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/run-experiment
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: semantic-scholar
+    path: skills/semantic-scholar
+    name: semantic-scholar
+    summary: Search published venue papers (IEEE, ACM, Springer, etc
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/semantic-scholar
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: serverless-modal
+    path: skills/serverless-modal
+    name: serverless-modal
+    summary: Run GPU workloads on Modal — training, fine-tuning, inference, batch processing
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/serverless-modal
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: slides-polish
+    path: skills/slides-polish
+    name: slides-polish
+    summary: Per-page Codex review + targeted python-pptx / Beamer fixes for academic talk slides
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/slides-polish
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: specification-writing
+    path: skills/specification-writing
+    name: specification-writing
+    summary: Write the full patent specification from claims and invention disclosure
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/specification-writing
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: system-profile
+    path: skills/system-profile
+    name: system-profile
+    summary: Profile a target (script, process, GPU, memory, interconnect) for performance analysis
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/system-profile
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: training-check
+    path: skills/training-check
+    name: training-check
+    summary: Periodically check WandB metrics during training to catch problems early (NaN, loss div...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/training-check
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: vast-gpu
+    path: skills/vast-gpu
+    name: vast-gpu
+    summary: Rent, manage, and destroy GPU instances on vast
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/vast-gpu
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: wiki-enrich
+    path: skills/wiki-enrich
+    name: wiki-enrich
+    summary: "Fill in the per-paper TODO sections of research-wiki/papers/<slug>"
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/wiki-enrich
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: writing-systems-papers
+    path: skills/writing-systems-papers
+    name: writing-systems-papers
+    summary: Paragraph-level structural blueprint for 10-12 page systems papers targeting OSDI, SOSP...
+    source:
+      repo: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+      path: skills/writing-systems-papers
+      license: MIT
+    tags: [aris, research]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global

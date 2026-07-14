@@ -75,6 +75,101 @@
 | [test-driven-development](skills/test-driven-development/) | Drives development with tests |
 | [using-agent-skills](skills/using-agent-skills/) | Discovers and invokes agent skills |
 
+## ARIS Research Skills
+
+科研自动化技能包（[ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)，80 个 canonical skills）。覆盖 idea → experiment → paper → review。
+
+| 来源 | License | 说明 |
+|------|---------|------|
+| [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | MIT | 另含 `skills/shared-references/`（共享契约，非独立 skill） |
+
+Cursor 适配见上游 [docs/CURSOR_ADAPTATION.md](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/docs/CURSOR_ADAPTATION.md)。完整目录：[docs/SKILLS_CATALOG.md](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/docs/SKILLS_CATALOG.md)。
+
+常用入口：`research-pipeline`、`idea-discovery`、`experiment-bridge`、`paper-write`、`auto-review-loop`。
+
+| ID | 作用 |
+|----|------|
+| [ablation-planner](skills/ablation-planner/) | Use when main results pass result-to-claim (claim_supported=yes or ... |
+| [alphaxiv](skills/alphaxiv/) | Quick single-paper lookup via AlphaXiv LLM-optimized summaries with... |
+| [analyze-results](skills/analyze-results/) | Analyze ML experiment results, compute statistics, generate compari... |
+| [arxiv](skills/arxiv/) | Search, download, and summarize academic papers from arXiv |
+| [auto-paper-improvement-loop](skills/auto-paper-improvement-loop/) | Autonomously improve a generated paper via GPT-5 |
+| [auto-review-loop](skills/auto-review-loop/) | Autonomous multi-round research review loop |
+| [auto-review-loop-llm](skills/auto-review-loop-llm/) | Autonomous research review loop using any OpenAI-compatible LLM API |
+| [auto-review-loop-minimax](skills/auto-review-loop-minimax/) | Autonomous multi-round research review loop using MiniMax API |
+| [citation-audit](skills/citation-audit/) | Zero-context verification that every bibliographic entry in the pap... |
+| [claims-drafting](skills/claims-drafting/) | Draft patent claims for an invention |
+| [comm-lit-review](skills/comm-lit-review/) | Communications-domain literature review with Claude-style knowledge... |
+| [deepxiv](skills/deepxiv/) | Search and progressively read open-access academic papers through D... |
+| [dse-loop](skills/dse-loop/) | Autonomous design space exploration loop for computer architecture ... |
+| [embodiment-description](skills/embodiment-description/) | Write detailed embodiment descriptions for patent specifications |
+| [exa-search](skills/exa-search/) | AI-powered web search via Exa with content extraction |
+| [experiment-audit](skills/experiment-audit/) | Audit experiment integrity before claiming results |
+| [experiment-bridge](skills/experiment-bridge/) | Workflow 1 |
+| [experiment-plan](skills/experiment-plan/) | Turn a refined research proposal or method idea into a detailed, cl... |
+| [experiment-queue](skills/experiment-queue/) | SSH job queue for multi-seed/multi-config ML experiments with OOM-a... |
+| [feishu-notify](skills/feishu-notify/) | Send notifications to Feishu/Lark |
+| [figure-description](skills/figure-description/) | Process user-provided patent figures and generate formal drawing de... |
+| [figure-spec](skills/figure-spec/) | Generate deterministic publication-quality architecture, workflow, ... |
+| [formula-derivation](skills/formula-derivation/) | Structures and derives research formulas when the user wants to 推导公... |
+| [gemini-search](skills/gemini-search/) | Search research papers via Gemini for broad literature discovery |
+| [grant-proposal](skills/grant-proposal/) | Draft a structured grant proposal from research ideas and literature |
+| [idea-creator](skills/idea-creator/) | Generate and rank research ideas given a broad direction |
+| [idea-discovery](skills/idea-discovery/) | Workflow 1: Full idea discovery pipeline to go from a broad researc... |
+| [idea-discovery-robot](skills/idea-discovery-robot/) | Workflow 1 adaptation for robotics and embodied AI |
+| [integrity-forensics](skills/integrity-forensics/) | Run the Anti-Autoresearch integrity-forensics sweep (span-anchored ... |
+| [interview-cheatsheet](skills/interview-cheatsheet/) | Generate a long-form Chinese interview-prep cheat sheet on a specif... |
+| [invention-structuring](skills/invention-structuring/) | Structure a raw invention idea into a formal invention disclosure |
+| [jurisdiction-format](skills/jurisdiction-format/) | Compile patent application into jurisdiction-specific filing format |
+| [kill-argument](skills/kill-argument/) | Two-thread adversarial review: a fresh reviewer constructs the stro... |
+| [mermaid-diagram](skills/mermaid-diagram/) | Generate Mermaid diagrams from user requirements |
+| [meta-apply](skills/meta-apply/) | Privileged applier that LANDS meta-optimize / corpus-audit patches ... |
+| [meta-optimize](skills/meta-optimize/) | Analyze ARIS usage logs and propose optimizations to SKILL |
+| [monitor-experiment](skills/monitor-experiment/) | Monitor running experiments, check progress, collect results |
+| [novelty-check](skills/novelty-check/) | Verify research idea novelty against recent literature |
+| [openalex](skills/openalex/) | Search academic papers via OpenAlex API for open citation data, ins... |
+| [overleaf-sync](skills/overleaf-sync/) | Two-way sync between a local paper directory and an Overleaf projec... |
+| [paper-claim-audit](skills/paper-claim-audit/) | Zero-context verification that every number, comparison, and scope ... |
+| [paper-compile](skills/paper-compile/) | Compile LaTeX paper to PDF, fix errors, and verify output |
+| [paper-figure](skills/paper-figure/) | Generate publication-quality figures and tables from experiment res... |
+| [paper-illustration](skills/paper-illustration/) | Generate publication-quality AI illustrations for academic papers u... |
+| [paper-illustration-image2](skills/paper-illustration-image2/) | Generate publication-quality academic illustrations through a local... |
+| [paper-plan](skills/paper-plan/) | Generate a structured paper outline from review conclusions and exp... |
+| [paper-poster](skills/paper-poster/) | DEPRECATED — superseded by /paper-poster-html |
+| [paper-poster-html](skills/paper-poster-html/) | DEFAULT poster pipeline — build an academic conference poster (ICML... |
+| [paper-slides](skills/paper-slides/) | Generate conference presentation slides (beamer LaTeX → PDF + edita... |
+| [paper-talk](skills/paper-talk/) | End-to-end conference talk pipeline: paper → slide outline → Beamer... |
+| [paper-write](skills/paper-write/) | Draft LaTeX paper section by section from an outline |
+| [paper-writing](skills/paper-writing/) | Workflow 3: Full paper writing pipeline that goes from a narrative ... |
+| [patent-novelty-check](skills/patent-novelty-check/) | Assess patent novelty and non-obviousness against prior art |
+| [patent-pipeline](skills/patent-pipeline/) | Full patent drafting pipeline from invention description to jurisdi... |
+| [patent-review](skills/patent-review/) | Get an external patent examiner review of a patent application |
+| [pixel-art](skills/pixel-art/) | Generate pixel art SVG illustrations for READMEs, docs, or slides |
+| [prior-art-search](skills/prior-art-search/) | Search patent databases and academic literature for prior art relev... |
+| [proof-checker](skills/proof-checker/) | Rigorous mathematical proof verification and fixing workflow |
+| [proof-writer](skills/proof-writer/) | Writes rigorous mathematical proofs for ML/AI theory |
+| [qzcli](skills/qzcli/) | Manage GPU compute jobs on the Qizhi (启智) platform using qzcli — a ... |
+| [rebuttal](skills/rebuttal/) | Workflow 4: Submission rebuttal pipeline |
+| [render-html](skills/render-html/) | Render an ARIS Markdown / JSON artifact (IDEA_REPORT, AUTO_REVIEW, ... |
+| [research-lit](skills/research-lit/) | Search and analyze research papers, find related work, summarize ke... |
+| [research-pipeline](skills/research-pipeline/) | Full end-to-end research pipeline: from a broad research direction ... |
+| [research-refine](skills/research-refine/) | Turn a vague research direction into a problem-anchored, elegant, f... |
+| [research-refine-pipeline](skills/research-refine-pipeline/) | Run an end-to-end workflow that chains `research-refine` and `exper... |
+| [research-review](skills/research-review/) | Get a deep critical review of research from an external reviewer ba... |
+| [research-wiki](skills/research-wiki/) | Persistent research knowledge base that accumulates papers, ideas, ... |
+| [resubmit-pipeline](skills/resubmit-pipeline/) | Workflow 5: orchestrate a text-only resubmit of a polished paper to... |
+| [result-to-claim](skills/result-to-claim/) | Use when experiments complete to judge what claims the results supp... |
+| [run-experiment](skills/run-experiment/) | Deploy and run ML experiments on local, remote, Vast |
+| [semantic-scholar](skills/semantic-scholar/) | Search published venue papers (IEEE, ACM, Springer, etc |
+| [serverless-modal](skills/serverless-modal/) | Run GPU workloads on Modal — training, fine-tuning, inference, batc... |
+| [slides-polish](skills/slides-polish/) | Per-page Codex review + targeted python-pptx / Beamer fixes for aca... |
+| [specification-writing](skills/specification-writing/) | Write the full patent specification from claims and invention discl... |
+| [system-profile](skills/system-profile/) | Profile a target (script, process, GPU, memory, interconnect) for p... |
+| [training-check](skills/training-check/) | Periodically check WandB metrics during training to catch problems ... |
+| [vast-gpu](skills/vast-gpu/) | Rent, manage, and destroy GPU instances on vast |
+| [wiki-enrich](skills/wiki-enrich/) | Fill in the per-paper TODO sections of research-wiki/papers/<slug> |
+| [writing-systems-papers](skills/writing-systems-papers/) | Paragraph-level structural blueprint for 10-12 page systems papers ... |
+
 ## 项目级 Skills（外部引用）
 
 以下 skills **不在本仓库注册**，适合按项目 clone 或 symlink 到目标仓库的 Agent 项目目录（如 `.cursor/skills/`）。详细用法见各仓库 README。
