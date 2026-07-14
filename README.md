@@ -8,6 +8,7 @@
 
 | ID | 作用 | 来源 | License | 依赖 |
 |----|------|------|---------|------|
+| [agent-reach](skills/agent-reach/) | 给 Agent 互联网能力：搜/读 Twitter、Reddit、YouTube、GitHub、B站、小红书等 | [Panniantong/agent-reach](https://github.com/Panniantong/agent-reach) `agent_reach/skill` | MIT | **agent-reach** CLI |
 | [brainstorming](skills/brainstorming/) | 实现前先澄清需求、提出方案、写设计 doc；**禁止**未经批准写代码 | [obra/superpowers](https://github.com/obra/superpowers) `skills/brainstorming` | MIT | — |
 | [create-skill](skills/create-skill/) | 创建/优化 Agent Skill（`SKILL.md` 结构、frontmatter、触发词） | Cursor 内置 `skills-cursor/create-skill` | Cursor 内置 | — |
 | [caveman](skills/caveman/) | 极简沟通模式，压缩 token（lite / full / ultra / 文言文） | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | MIT | — |
@@ -22,6 +23,7 @@
 
 | Skill | 怎么说 |
 |-------|--------|
+| agent-reach | 「帮我调研一下 X」「搜搜推特/小红书上大家怎么说」 |
 | brainstorming | 「先 brainstorm 一下这个功能」「写代码前先设计」 |
 | create-skill | 「帮我写一个 skill」「SKILL.md 怎么写」 |
 | caveman | 「caveman mode」「少说点 token」 |
