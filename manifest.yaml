@@ -54,6 +54,20 @@ skills:
     agents: [cursor, claude, codex, opencode]
     default_scope: global
 
+  - id: fireworks-tech-graph
+    path: skills/fireworks-tech-graph
+    name: fireworks-tech-graph
+    summary: 自然语言生成技术架构图（SVG+PNG）——8 种风格、14 类图（含 UML），覆盖架构/时序/流程图等。
+    source:
+      repo: https://github.com/yizhiyanhua-ai/fireworks-tech-graph
+      path: .
+      license: MIT
+    requires:
+      - cairosvg
+    tags: [diagram, architecture, svg, design]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
   - id: frontend-design
     path: skills/frontend-design
     name: frontend-design
