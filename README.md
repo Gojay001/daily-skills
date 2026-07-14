@@ -32,6 +32,47 @@
 | office-hours | 「office hours」「帮我想想这个产品值不值得做」 |
 | writing-plans | 「写实现计划」「spec 有了，帮我拆任务」 |
 
+## Addy Osmani Agent Skills
+
+生产级工程技能包（24 个），覆盖 DEFINE → PLAN → BUILD → VERIFY → REVIEW → SHIP。
+
+| 来源 | License |
+|------|---------|
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT |
+
+安装后 symlink 为 `daily-<id>`。装全部：
+
+```bash
+./install/install.sh --host cursor --scope global --skills api-and-interface-design,browser-testing-with-devtools,ci-cd-and-automation,code-review-and-quality,code-simplification,context-engineering,debugging-and-error-recovery,deprecation-and-migration,documentation-and-adrs,doubt-driven-development,frontend-ui-engineering,git-workflow-and-versioning,idea-refine,incremental-implementation,interview-me,observability-and-instrumentation,performance-optimization,planning-and-task-breakdown,security-and-hardening,shipping-and-launch,source-driven-development,spec-driven-development,test-driven-development,using-agent-skills
+```
+
+| ID | 作用 |
+|----|------|
+| [api-and-interface-design](skills/api-and-interface-design/) | Guides stable API and interface design |
+| [browser-testing-with-devtools](skills/browser-testing-with-devtools/) | Tests in real browsers via Chrome DevTools MCP |
+| [ci-cd-and-automation](skills/ci-cd-and-automation/) | Automates CI/CD pipeline setup |
+| [code-review-and-quality](skills/code-review-and-quality/) | Conducts multi-axis code review |
+| [code-simplification](skills/code-simplification/) | Simplifies code for clarity |
+| [context-engineering](skills/context-engineering/) | Optimizes agent context setup |
+| [debugging-and-error-recovery](skills/debugging-and-error-recovery/) | Guides systematic root-cause debugging |
+| [deprecation-and-migration](skills/deprecation-and-migration/) | Manages deprecation and migration |
+| [documentation-and-adrs](skills/documentation-and-adrs/) | Records decisions and documentation |
+| [doubt-driven-development](skills/doubt-driven-development/) | Subjects every non-trivial decision to a fresh-context adversarial rev... |
+| [frontend-ui-engineering](skills/frontend-ui-engineering/) | Builds production-quality, accessible, responsive user-facing UIs |
+| [git-workflow-and-versioning](skills/git-workflow-and-versioning/) | Structures git workflow practices |
+| [idea-refine](skills/idea-refine/) | Refines raw ideas into sharp, actionable concepts through structured d... |
+| [incremental-implementation](skills/incremental-implementation/) | Delivers changes incrementally |
+| [interview-me](skills/interview-me/) | Extracts what the user actually wants instead of what they think they ... |
+| [observability-and-instrumentation](skills/observability-and-instrumentation/) | Instruments code so production behavior is visible and diagnosable |
+| [performance-optimization](skills/performance-optimization/) | Optimizes application performance across frontend, backend, queries, a... |
+| [planning-and-task-breakdown](skills/planning-and-task-breakdown/) | Breaks work into ordered tasks |
+| [security-and-hardening](skills/security-and-hardening/) | Hardens code against vulnerabilities |
+| [shipping-and-launch](skills/shipping-and-launch/) | Prepares production launches |
+| [source-driven-development](skills/source-driven-development/) | Grounds every implementation decision in official documentation |
+| [spec-driven-development](skills/spec-driven-development/) | Creates specs before coding |
+| [test-driven-development](skills/test-driven-development/) | Drives development with tests |
+| [using-agent-skills](skills/using-agent-skills/) | Discovers and invokes agent skills |
+
 ## 项目级 Skills（外部引用）
 
 以下 skills **不在本仓库注册**，适合按项目 clone 或 symlink 到目标仓库的 Agent 项目目录（如 `.cursor/skills/`）。详细用法见各仓库 README。

@@ -3,6 +3,7 @@ version: 1
 prefix: daily
 
 skills:
+
   - id: agent-reach
     path: skills/agent-reach
     name: agent-reach
@@ -100,5 +101,293 @@ skills:
       path: skills/writing-plans
       license: MIT
     tags: [planning, implementation, superpowers]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: api-and-interface-design
+    path: skills/api-and-interface-design
+    name: api-and-interface-design
+    summary: Guides stable API and interface design
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/api-and-interface-design
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: browser-testing-with-devtools
+    path: skills/browser-testing-with-devtools
+    name: browser-testing-with-devtools
+    summary: Tests in real browsers via Chrome DevTools MCP
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/browser-testing-with-devtools
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: ci-cd-and-automation
+    path: skills/ci-cd-and-automation
+    name: ci-cd-and-automation
+    summary: Automates CI/CD pipeline setup
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/ci-cd-and-automation
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: code-review-and-quality
+    path: skills/code-review-and-quality
+    name: code-review-and-quality
+    summary: Conducts multi-axis code review
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/code-review-and-quality
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: code-simplification
+    path: skills/code-simplification
+    name: code-simplification
+    summary: Simplifies code for clarity
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/code-simplification
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: context-engineering
+    path: skills/context-engineering
+    name: context-engineering
+    summary: Optimizes agent context setup
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/context-engineering
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: debugging-and-error-recovery
+    path: skills/debugging-and-error-recovery
+    name: debugging-and-error-recovery
+    summary: Guides systematic root-cause debugging
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/debugging-and-error-recovery
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: deprecation-and-migration
+    path: skills/deprecation-and-migration
+    name: deprecation-and-migration
+    summary: Manages deprecation and migration
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/deprecation-and-migration
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: documentation-and-adrs
+    path: skills/documentation-and-adrs
+    name: documentation-and-adrs
+    summary: Records decisions and documentation
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/documentation-and-adrs
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: doubt-driven-development
+    path: skills/doubt-driven-development
+    name: doubt-driven-development
+    summary: Subjects every non-trivial decision to a fresh-context adversarial review before it stands
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/doubt-driven-development
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: frontend-ui-engineering
+    path: skills/frontend-ui-engineering
+    name: frontend-ui-engineering
+    summary: Builds production-quality, accessible, responsive user-facing UIs
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/frontend-ui-engineering
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: git-workflow-and-versioning
+    path: skills/git-workflow-and-versioning
+    name: git-workflow-and-versioning
+    summary: Structures git workflow practices
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/git-workflow-and-versioning
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: idea-refine
+    path: skills/idea-refine
+    name: idea-refine
+    summary: Refines raw ideas into sharp, actionable concepts through structured divergent and conv...
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/idea-refine
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: incremental-implementation
+    path: skills/incremental-implementation
+    name: incremental-implementation
+    summary: Delivers changes incrementally
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/incremental-implementation
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: interview-me
+    path: skills/interview-me
+    name: interview-me
+    summary: Extracts what the user actually wants instead of what they think they should want
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/interview-me
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: observability-and-instrumentation
+    path: skills/observability-and-instrumentation
+    name: observability-and-instrumentation
+    summary: Instruments code so production behavior is visible and diagnosable
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/observability-and-instrumentation
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: performance-optimization
+    path: skills/performance-optimization
+    name: performance-optimization
+    summary: Optimizes application performance across frontend, backend, queries, and databases
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/performance-optimization
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: planning-and-task-breakdown
+    path: skills/planning-and-task-breakdown
+    name: planning-and-task-breakdown
+    summary: Breaks work into ordered tasks
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/planning-and-task-breakdown
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: security-and-hardening
+    path: skills/security-and-hardening
+    name: security-and-hardening
+    summary: Hardens code against vulnerabilities
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/security-and-hardening
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: shipping-and-launch
+    path: skills/shipping-and-launch
+    name: shipping-and-launch
+    summary: Prepares production launches
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/shipping-and-launch
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: source-driven-development
+    path: skills/source-driven-development
+    name: source-driven-development
+    summary: Grounds every implementation decision in official documentation
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/source-driven-development
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: spec-driven-development
+    path: skills/spec-driven-development
+    name: spec-driven-development
+    summary: Creates specs before coding
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/spec-driven-development
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: test-driven-development
+    path: skills/test-driven-development
+    name: test-driven-development
+    summary: Drives development with tests
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/test-driven-development
+      license: MIT
+    tags: [addyosmani, engineering]
+    agents: [cursor, claude, codex, opencode]
+    default_scope: global
+
+  - id: using-agent-skills
+    path: skills/using-agent-skills
+    name: using-agent-skills
+    summary: Discovers and invokes agent skills
+    source:
+      repo: https://github.com/addyosmani/agent-skills
+      path: skills/using-agent-skills
+      license: MIT
+    tags: [addyosmani, engineering]
     agents: [cursor, claude, codex, opencode]
     default_scope: global
